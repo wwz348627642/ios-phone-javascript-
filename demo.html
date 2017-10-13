@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
+	<title>Document</title>
+	<link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+	<div class="all-city-list" id="concat-list">
+		<div class="contacts-header"></div>
+		<!-- 通讯录 -->
+		<ul class="contacts-content">
+			<li class="contacts-group">
+				<div class="contacts-group-title">A</div>
+				<div class="contacts-group-item">
+					<div class="city-item">about</div>
+					<div class="city-item">about</div>
+					<div class="city-item">about</div>
+					<div class="city-item">about</div>
+				</div>
+			</li>
+			<li class="contacts-group">
+				<div class="contacts-group-title">B</div>
+				<div class="contacts-group-item">
+					<div class="city-item">blue</div>
+					<div class="city-item">blue</div>
+					<div class="city-item">blue</div>
+					<div class="city-item">blue</div>
+				</div>
+			</li>
+			<li class="contacts-group">
+				<div class="contacts-group-title">C</div>
+				<div class="contacts-group-item">
+					<div class="city-item">color</div>
+					<div class="city-item">color</div>
+					<div class="city-item">color</div>
+					<div class="city-item">color</div>
+				</div>
+			</li>
+			<li class="contacts-group">
+				<div class="contacts-group-title">D</div>
+				<div class="contacts-group-item">
+					<div class="city-item">desk</div>
+					<div class="city-item">desk</div>
+					<div class="city-item">desk</div>
+					<div class="city-item">desk</div>
+				</div>
+			</li>
+			<li class="contacts-group">
+				<div class="contacts-group-title">E</div>
+				<div class="contacts-group-item">
+					<div class="city-item">earth</div>
+					<div class="city-item">earth</div>
+					<div class="city-item">earth</div>
+					<div class="city-item">earth</div>
+				</div>
+			</li>
+			<li class="contacts-group">
+				<div class="contacts-group-title">F</div>
+				<div class="contacts-group-item">
+					<div class="city-item">forget</div>
+					<div class="city-item">forget</div>
+					<div class="city-item">forget</div>
+					<div class="city-item">forget</div>
+				</div>
+			</li>
+		</ul>
+		
+		<!-- 侧边栏 -->
+		<div class="contacts-nav">
+			<ul class="contacts-nav-list" id="contact-nav">
+				<li class="nav-list-item" >
+					<span class="text-info" alt="A">A</span>
+				</li>
+				<li class="nav-list-item" >
+					<span class="text-info" alt="B">B</span>
+				</li>
+				<li class="nav-list-item" >
+					<span class="text-info" alt="C">C</span>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<script src="./demo.js"></script>
+	<script>
+		var concat = new Contact({
+					id: '#concat-list',
+					nav: '#contact-nav'
+				})
+	</script>
+</body>
+</html>
